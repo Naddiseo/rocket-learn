@@ -1,0 +1,9 @@
+[global]
+template_dir = "static"
+
+
+[development]
+port = 9898
+
+[production]
+port = 9898

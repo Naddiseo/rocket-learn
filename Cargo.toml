@@ -1,0 +1,24 @@
+#cargo-features = ["edition"]
+
+[package]
+name = "hello-rocket"
+version = "0.1.0"
+authors = ["me"]
+#edition = '2018'
+
+[dependencies]
+rocket = "0.3.13"
+rocket_codegen = "0.3.13"
+tera = "0.11.7"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+diesel = { version = "<=1.2", features = ["r2d2", "sqlite"]}
+dotenv = ""
+dotenv_codegen = ""
+lazy_static = "1.0"
+
+[dependencies.rocket_contrib]
+version = "0.3.13"
+default_features = false
+features = [ "tera_templates" ]

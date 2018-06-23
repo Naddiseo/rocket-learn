@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	</head>
+	<body>
+	
+		<nav id="top-nav">
+		
+		</nav>
+		
+		<div class="menu">
+		{% if user.is_authenticated %}
+		
+		{% endif %}
+		</div>
+		<div class="content">
+		{% block content%}
+		{% endblock content %}
+		</div>
+	</body>
+</html>

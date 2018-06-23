@@ -1,0 +1,5 @@
+{% extends "base" %}
+
+{% block content %}
+home page. Userid={{user_id}}
+{% endblock content %}
